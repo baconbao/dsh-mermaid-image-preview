@@ -15,8 +15,8 @@ Preview mermaid syntax as images via local rendering in DSH Web when the chat me
 
 - **Preview mermaid diagrams by rendering images directly!**
 - **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
-- Setting card: you can adjust runtime settings in the UI - no restart needed.
-- Mount point: `conversation.chat.turnTail` (chain slot, additive - never
+- Setting tab: you can adjust runtime settings in the UI - no restart needed.
+- Mount point: `conversation.chat.turnTail` (list slot, additive - never
   shadows shipped UI).
 - Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
 - Light/dark themes follow the UI automatically.
@@ -60,13 +60,20 @@ $ dsh plugin --profile web add .
 > [!IMPORTANT]
 > Restart dsh web after installing.
 
+> [!NOTE]
+> **Runtime compatibility:** this release targets DSH **0.1.6-alpha.2 and later**; the peer range
+> declares exactly that floor and no upper bound, so it installs on every newer runtime.
+> Upstream made `conversation.chat.turnTail` a `list` slot and replaced the `settings.plugin.item`
+> card seat with `settings.plugins.tab`, which is what this release registers into; older runtimes
+> (for example `0.1.5-rc.3`, which still declares a `chain` seat) need an older plugin release.
+
 ## Configuration
 
 ### Change runtime settings on setting card
 
 ![dsh-mermaid-image-preview_setting-card](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/928d6f4cc1486295924925683d873a7beba38cad/docs/img/dsh-mermaid-image-preview_setting-card.png)
 
-The **Plugins** settings page (**Settings > Plugins**) shows a `Mermaid image preview` card where
+The **Plugins** settings page (**Settings > Plugins**) shows a `Mermaid image preview` tab where
 you can adjust plugin's runtime settings directly - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
