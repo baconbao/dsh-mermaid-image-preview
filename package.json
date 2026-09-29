@@ -44,7 +44,6 @@
   },
   "dependencies": {
     "dompurify": "^3.4.13",
-    "jsdom": "^30.0.1",
     "mermaid": "^11.16.1",
     "svgdom": "^0.1.28"
   }
