@@ -1,7 +1,7 @@
 {
   "name": "@baconbao/dsh-mermaid-image-preview",
   "description": "A DeepSeek Harness Plugin for Previewing Mermaid Diagram by Images in Chat Sessions. View on GitHub (https://github.com/baconbao/dsh-mermaid-image-preview).",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "license": "MIT",
   "author": {
     "name": "baconbao",
