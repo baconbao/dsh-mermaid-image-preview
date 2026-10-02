@@ -1,8 +1,9 @@
 # dsh-mermaid-image-preview
 
-[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
-[![DSH Plugin Profile Badge](https://img.shields.io/badge/DSH-Web%20profile-5B4CF0?style=flat-square)](https://github.com/deepseek-ai/deepseek-harness)
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/baconbao/dsh-mermaid-image-preview/)
 [![Release Badge](https://img.shields.io/github/v/release/baconbao/dsh-mermaid-image-preview)](https://github.com/baconbao/dsh-mermaid-image-preview/releases)
+![DSH Plugin Profile Badge](https://img.shields.io/badge/DSH-Web%20profile-5B4CF0)
+![DSH Plugin Works-on Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fbaconbao.github.io%2Fbadge-endpoints%2Fdsh-mermaid-image-preview%2Fworks-on.json)
 [![License Badge](https://img.shields.io/github/license/baconbao/dsh-mermaid-image-preview)](./LICENSE)
 
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
