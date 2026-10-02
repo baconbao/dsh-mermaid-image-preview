@@ -15,7 +15,7 @@ Preview mermaid syntax as images via local rendering in DSH Web when the chat me
 
 - **Preview mermaid diagrams by rendering images directly!**
 - **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
-- Setting tab: you can adjust runtime settings in the UI - no restart needed.
+- Plugin page settings: adjust runtime settings on the plugin's own page in the Plugins panel - no restart needed.
 - Mount point: `conversation.chat.turnTail` (additive - never shadows shipped UI).
 - Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
 - Light/dark themes follow the UI automatically.
@@ -72,12 +72,12 @@ upgrade both together.
 
 ## Configuration
 
-### Change runtime settings on the settings page
+### Change runtime settings on the plugin page
 
 ![dsh-mermaid-image-preview_settings](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/928d6f4cc1486295924925683d873a7beba38cad/docs/img/dsh-mermaid-image-preview_setting-card.png)
 
-The **Plugins** settings page (**Settings > Plugins**) shows a `Mermaid image preview` tab where
-you can adjust plugin's runtime settings directly - no restart needed.
+The **Plugins** panel lists this plugin under **Installed**; open its page and the
+configuration block carries the runtime settings - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
 ### Change render server by profile patch
