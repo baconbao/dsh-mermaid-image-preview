@@ -18,7 +18,7 @@ Preview mermaid syntax as images via local rendering in DSH Web when the chat me
 - **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
 - Plugin page settings: adjust runtime settings on the plugin's own page in the Plugins panel - no restart needed.
 - Mount point: `conversation.chat.turnTail` (additive - never shadows shipped UI).
-- Thumbnail display: the diagram renders as a thumbnail; click to enlarge in place, click again to shrink back (same element toggles, no popup).
+- Preview display: the diagram renders as a collapsed preview; click to enlarge in place, click again to shrink back (same element toggles, no popup).
 - Light/dark themes follow the UI automatically.
 
 ## Support diagram types
