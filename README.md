@@ -80,13 +80,6 @@ $ dsh plugin --profile web add .
 > [!IMPORTANT]
 > Restart DSH after installing.
 
-## Compatibility
-
-| This plugin version | Supported DSH version |
-| --- | --- |
-| **v0.4.0** and later | **0.1.6-alpha.2** and later |
-| **v0.3.2** and earlier | **0.1.0-rc.6** – **0.1.6-alpha.1** |
-
 ## Configuration
 
 ### Change runtime settings on the plugin page
@@ -144,6 +137,13 @@ graph TD
   B -->|No| D[Retry]
 ```
 ````
+
+## Compatibility
+
+| This plugin version | Supported DSH version |
+| --- | --- |
+| **v0.4.0** and later | **0.1.6-alpha.2** and later |
+| **v0.3.2** and earlier | **0.1.0-rc.6** – **0.1.6-alpha.1** |
 
 ---
 
