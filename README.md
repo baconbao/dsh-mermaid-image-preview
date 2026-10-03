@@ -10,7 +10,7 @@ A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
 Preview mermaid syntax as images via local rendering in DSH Web when the chat message contains a mermaid fenced code block (` ```mermaid or ```mmd ` ).
 
-![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/928d6f4cc1486295924925683d873a7beba38cad/docs/img/dsh-mermaid-image-preview.png)
+![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/ce80d380212961ea8ee0294dc1b28584c4b9cc1e/docs/img/dsh-mermaid-image-preview.png)
 
 ## Features and how it works
 
@@ -71,7 +71,7 @@ $ dsh plugin --profile web add .
 
 ### Change runtime settings on the plugin page
 
-![dsh-mermaid-image-preview_settings](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/928d6f4cc1486295924925683d873a7beba38cad/docs/img/dsh-mermaid-image-preview_setting-card.png)
+![dsh-mermaid-image-preview_settings](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/ce80d380212961ea8ee0294dc1b28584c4b9cc1e/docs/img/dsh-mermaid-image-preview_setting.png)
 
 The **Plugins** panel lists this plugin under **Installed**; open its page and the
 configuration block carries the runtime settings - no restart needed.
