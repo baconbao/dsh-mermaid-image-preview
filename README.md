@@ -37,7 +37,7 @@ The plugin renders diagrams locally with a built-in renderer. It supports
 
 ### Install from `github`
 
-#### Install with the DeepSeek Harness Desktop (the `desktop` profile)
+#### Install with DeepSeek Harness Desktop (the `desktop` profile)
 
 In **DeepSeek Harness (Desktop)**, go to the **Plugins** panel, click the **+ Add plugin** button,
 paste one of the URLs below, then click the **Install** button.
@@ -55,7 +55,7 @@ https://github.com/baconbao/dsh-mermaid-image-preview#dev
 > Make sure Git is installed on your machine before installing.
 
 
-#### Install with the DeepSeek Harness WebUI (the `web` profile)
+#### Install with DeepSeek Harness WebUI (the `web` profile)
 
 ```bash
 ### latest release version
@@ -97,11 +97,11 @@ The **Plugins** panel lists this plugin under **Installed**; open its page and t
 configuration block carries the runtime settings - no restart needed.
 Values are stored in localStorage and applied immediately across all sessions.
 
-### Change render server by profile patch
+### Change render server via configuration file
 
 Diagrams are rendered locally by default. To use your own render server or
 enable the external fallback, edit the profile's `cordis.patch.yml` (e.g.
-`~/.dsh/profiles/web/cordis.patch.yml`):
+`~/.dsh/profiles/web/cordis.patch.yml` for WebUI, or `~/.dsh/profiles/desktop/cordis.patch.yml` for Desktop):
 
 ```yaml
 - id: ui-dsh-mermaid-image-preview
@@ -119,11 +119,11 @@ enable the external fallback, edit the profile's `cordis.patch.yml` (e.g.
 
 ## Uninstallation
 
-### DeepSeek Harness Desktop (the `desktop` profile)
+#### Unstall with DeepSeek Harness Desktop (the `desktop` profile)
 
 Open this plugin's page in the **Plugins** panel, then click **Uninstall**.
 
-### DeepSeek Harness WebUI (the `web` profile)
+#### Unstall with DeepSeek Harness WebUI (the `web` profile)
 
 ```bash
 $ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
