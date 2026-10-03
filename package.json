@@ -8,6 +8,13 @@
     "url": "https://baconbao.org"
   },
   "homepage": "https://github.com/baconbao/dsh-mermaid-image-preview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baconbao/dsh-mermaid-image-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baconbao/dsh-mermaid-image-preview/issues"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
