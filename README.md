@@ -16,9 +16,9 @@ Preview mermaid syntax as images via local rendering in DSH Web when the chat me
 
 - **Preview mermaid diagrams by rendering images directly!**
 - **Local renderer first!** If it fails, it can fall back to an external or self-hosted rendering engine by configuring a fallback server.
-- Plugin page settings: adjust runtime settings on the plugin's own page in the Plugins panel - no restart needed.
-- Mount point: `conversation.chat.turnTail` (additive - never shadows shipped UI).
-- Preview display: the diagram renders as a collapsed preview; click to enlarge in place, click again to shrink back (same element toggles, no popup).
+- **Nothing gets replaced:** the preview is added below the agent's reply, so
+  the original messages are not covered up or changed.
+- Settings in Plugin page: adjust the plugin's runtime settings in the Plugins panel - no restart needed.
 - Light/dark themes follow the UI automatically.
 
 ## Support diagram types
@@ -60,16 +60,12 @@ $ dsh plugin --profile web add .
 > [!IMPORTANT]
 > Restart dsh web after installing.
 
-### Runtime compatibility
+### Compatibility
 
-| Plugin version | Supported DSH version |
+| This plugin version | Supported DSH version |
 | --- | --- |
 | **v0.4.0** and later | **0.1.6-alpha.2** and later |
 | **v0.3.2** and earlier | **0.1.0-rc.6** – **0.1.6-alpha.1** |
-
-DSH changed the place this plugin attaches its diagrams to, and moved the plugin
-settings page. Install the plugin version that matches your DSH version, or
-upgrade both together.
 
 ## Configuration
 
@@ -127,7 +123,7 @@ graph TD
 
 ## Author
 
-baconbao, vibe coding with deepseek ai
+baconbao, vibe coding with ai
 
 ## License
 
