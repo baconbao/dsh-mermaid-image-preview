@@ -1,14 +1,14 @@
 # dsh-mermaid-image-preview
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com/p/baconbao/dsh-mermaid-image-preview/)
-[![Release Badge](https://img.shields.io/github/v/release/baconbao/dsh-mermaid-image-preview)](https://github.com/baconbao/dsh-mermaid-image-preview/releases)
-![DSH Plugin Profile Badge](https://img.shields.io/badge/DSH-Web%20profile-5B4CF0)
+![DSH Plugin Profile Badge](https://img.shields.io/badge/DSH%20profile-Web%20%2F%20Desktop-5B4CF0)
 ![DSH Plugin Works-on Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fbaconbao.github.io%2Fbadge-endpoints%2Fdsh-mermaid-image-preview%2Fworks-on.json)
+[![Release Badge](https://img.shields.io/github/v/release/baconbao/dsh-mermaid-image-preview)](https://github.com/baconbao/dsh-mermaid-image-preview/releases)
 [![License Badge](https://img.shields.io/github/license/baconbao/dsh-mermaid-image-preview)](./LICENSE)
 
 A DeepSeek Harness Plugin for Previewing Mermaid Diagram Images
 
-Preview mermaid syntax as images via local rendering in DSH Web when the chat message contains a mermaid fenced code block (` ```mermaid or ```mmd ` ).
+Preview Mermaid syntax as images via local rendering in DSH when a chat message contains a Mermaid fenced code block (` ```mermaid ` or ` ```mmd `).
 
 ![dsh-mermaid-image-preview](https://raw.githubusercontent.com/baconbao/dsh-mermaid-image-preview/ce80d380212961ea8ee0294dc1b28584c4b9cc1e/docs/img/dsh-mermaid-image-preview.png)
 
@@ -24,7 +24,7 @@ Preview mermaid syntax as images via local rendering in DSH Web when the chat me
 ## Support diagram types
 
 The plugin renders diagrams locally with a built-in renderer. It supports
-14 diagram types out of the box.
+13 diagram types out of the box.
 
 **Rendered locally:** flowchart, sequenceDiagram, classDiagram, stateDiagram, erDiagram, pie, journey, gitGraph, requirementDiagram, timeline, quadrantChart, packet-beta, xychart-beta
 
@@ -35,11 +35,31 @@ The plugin renders diagrams locally with a built-in renderer. It supports
 
 ## Installation
 
-### Installation from `github`
+### Install from `github`
+
+#### Install with the DeepSeek Harness Desktop (the `desktop` profile)
+
+In **DeepSeek Harness (Desktop)**, go to the **Plugins** panel, click the **+ Add plugin** button,
+paste one of the URLs below, then click the **Install** button.
+
+```markdown
+### latest release version
+https://github.com/baconbao/dsh-mermaid-image-preview
+### specific version
+https://github.com/baconbao/dsh-mermaid-image-preview#<VERSION_TAG|GIT_TAG>
+### dev version
+https://github.com/baconbao/dsh-mermaid-image-preview#dev
+```
+
+> [!NOTE]
+> Make sure Git is installed on your machine before installing.
+
+
+#### Install with the DeepSeek Harness WebUI (the `web` profile)
 
 ```bash
 ### latest release version
-$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#latest
+$ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview
 
 ### specific version
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#<VERSION_TAG|GIT_TAG>
@@ -48,7 +68,7 @@ $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-imag
 $ npx @deepseek-ai/dsh plugin --profile web add github:baconbao/dsh-mermaid-image-preview#dev
 ```
 
-### Installation from source code
+### Install from source code
 
 ```bash
 $ git clone https://github.com/baconbao/dsh-mermaid-image-preview
@@ -58,9 +78,9 @@ $ dsh plugin --profile web add .
 ```
 
 > [!IMPORTANT]
-> Restart dsh web after installing.
+> Restart DSH after installing.
 
-### Compatibility
+## Compatibility
 
 | This plugin version | Supported DSH version |
 | --- | --- |
@@ -91,20 +111,26 @@ enable the external fallback, edit the profile's `cordis.patch.yml` (e.g.
     enableFallback: false
 ```
 
-- `enableLocalRender`: render locally (default `true`). Set `false` to always use the fallback server (`enableFallback` is ignored).
+- `enableLocalRender`: render locally (default `true`). Set it to `false` to always use the fallback server (`enableFallback` is ignored).
 - `fallbackRenderUrl`: fallback render server (default `https://mermaid.ink`).
 - `enableFallback`: use the fallback server when local rendering fails (default `false`).
-- Restart dsh web after changing these settings.
+- Restart DSH after changing these settings.
 - To host your own fallback render server, see <https://github.com/jihchi/mermaid.ink> for the details.
 
 ## Uninstallation
+
+### DeepSeek Harness Desktop (the `desktop` profile)
+
+Open this plugin's page in the **Plugins** panel, then click **Uninstall**.
+
+### DeepSeek Harness WebUI (the `web` profile)
 
 ```bash
 $ dsh plugin --profile web remove @baconbao/dsh-mermaid-image-preview
 ```
 
 > [!NOTE]
-> Since **v0.2.0** the plugin/package id is changed from `dsh-mermaid-image-preview` to `@baconbao/dsh-mermaid-image-preview`.
+> Since **v0.2.0**, the plugin/package ID has been `@baconbao/dsh-mermaid-image-preview` (it was `dsh-mermaid-image-preview` before).
 
 ## Test
 
@@ -123,7 +149,7 @@ graph TD
 
 ## Author
 
-baconbao, vibe coding with ai
+baconbao, vibe coding with AI
 
 ## License
 
